@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>온라인 프로필</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+    <div class="nav">
+        <button onclick="goToScroll('who')">who am i?</button>
+        <button onclick="goToScroll('ex')">Experience</button>
+        <button onclick="goToScroll('skills')">Skills</button>
+        <button onclick="goToScroll('education')">Education</button>
+    </div>
+    <div id="container">
+        <!-- 사이드바 -->
+        <!-- <aside>
+            <div id="namecard">
+
+            </div>
+            <div id="detail">
+                               
+            </div>
+            <div id="sns">
+                <h2>SNS</h2>
+
+            </div>        
+        </aside> -->
+        <div id="main">
+            <!-- 자기 소개 -->
+            <section>
+                <h2 class="subtitle who">Who am I?</h2>
+                <p><mark>프런트엔드 웹 기술(Front-end Web Tech.)</mark>에 관심이 많습니다. <br>현재 미림여고 재학중입니다.</p>
+            </section>
+           
+
+            <!-- 경력 -->
+            <section>
+                <h2 class="subtitle ex">Experience</h2>
+                <ul>
+                    <li>프론트엔드 개발
+                        <ul>
+                            <li>업무 내용 업무 내용 업무 내용 </li>
+                            <li>업무 내용 </li>
+                            <li>업무 내용 업무 내용</li> 
+                        </ul>
+                    </li>
+                    <li>웹 디자인
+                        <ul>
+                            <li>업무 내용 </li>
+                            <li>업무 내용 업무 내용</li>
+                        </ul>                        
+                    </li>
+                </ul>             
+            </section>
+
+            <!-- 숙련도 -->
+            <section>
+                <h2 class="subtitle skills">Skills</h2>
+
+            </section>
+
+
+            <!-- 학력 -->
+            <section >
+                <h2 class="subtitle education">Education</h2>
+                <div class="edu">
+                <h3>학력사항</h3>
+                <table border="1" class="table">
+                    <tr bgcolor = "gray">
+                        <th>출신학교</th>
+                        <th>전공</th>
+                        <th>기간</th>
+                        <th>구분</th>
+                    </tr>
+                    
+                    <tr ><!-- 첫번째 줄 시작 -->
+                        <td class="room">ㅇㅇㅇㅇ고등학교</td>
+                        <td>소프트웨어</td>
+                        <td >2001.3 ~ 2004.2</td>
+                        <td >재학</td>
+                    </tr><!-- 첫번째 줄 끝 -->
+                    <tr><!-- 두번째 줄 시작 -->
+                        <td rowspan="2" class="room">ㅇㅇㅇ중학교</td>
+                        <td>-</td>
+                        <td >2001.3 ~ 2004.2</td>
+                        <td >졸업</td>
+                    </tr><!-- 두번째 줄 끝 -->
+                </table>    
+                </div>
+            </section>
+        </div>        
+    </div>
+    <script src="style.js"></script>
+</body>
+</html>

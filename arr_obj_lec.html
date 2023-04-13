@@ -13,21 +13,80 @@
     <title>Hello, modularity!</title>
   </head>
   <body>
-    <div class = "container mt-3">
-        <div class = "card p-3">
-            소나타 50000
+
+    <div class="card-group container">
+
+      <div class="card">
+
+        <img src="https://via.placeholder.com/600">
+
+        <div class="card-body">
+
+          <h5>Card title</h5>
+
+          <p>가격 : 70000</p>
+
+          <button class="btn btn-danger">주문하기</button>
+
         </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://via.placeholder.com/600">
+
+        <div class="card-body">
+
+          <h5>Card title</h5>
+
+          <p>가격 : 70000</p>
+
+          <button class="btn btn-danger">주문하기</button>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://via.placeholder.com/600">
+
+        <div class="card-body">
+
+          <h5>Card title</h5>
+
+          <p>가격 : 70000</p>
+
+          <button class="btn btn-danger">주문하기</button>
+
+        </div>
+
+      </div>
+
     </div>
-    
-    <script>
-        // var car = '소나타';
-        // var carPrice = 50000;
-        // var carColor = 'white';
-        //1. array 자료형 사용
-        var car = ['소나타', 50000, 'white'];
-        console.log(car);
-    </script>
+
     
 
-  </body>
+    <script>
+
+      var products = [
+
+        { id : 0, price : 71000, title : 'Blossom Dress' },
+
+        { id : 1, price : 50000, title : 'Springfield Shirt' },
+
+        { id : 2, price : 60000, title : 'Black Monastery' }
+
+      ];
+
+      for(let i = 0; i<3; i++){
+        document.querySelectorAll('.card-body h5')[i].innerHTML = products[i].title;
+        document.querySelectorAll('.card-body p')[i].innerHTML = products[i].price;
+      }
+
+      
+
+    </script>
+
 </html>
